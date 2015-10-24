@@ -28,7 +28,7 @@
 	<th>Build Result</th>
 	<th>Deploy Result</th>
 	<th>Overall Health Result</th>
-  <tr ng-repeat="x in names">
+  <tr ng-repeat="x in names.slice().reverse()">
     <td>{{ x.buildid}}</td>
     <td>{{x.created_at}}</td>
 
@@ -40,16 +40,20 @@
     </td>
 
       <td ng-class="(x.integrationresults=='pass' || x.integrationresults=='PASS') ? 'td-pass' : (x.integrationresults==null) ? 'td-null' : 'td-fail'"
-            ng-style="{'background-color':((x.integrationresults=='pass' || x.integrationresults=='PASS')?'#90EE90':(x.integrationresults==null)?'lightgray':'#ff6666')}"><a href="#">{{x.integrationresults}}</a></td>
+            ng-style="{'background-color':((x.integrationresults=='pass' || x.integrationresults=='PASS')?'#90EE90':(x.integrationresults==null)?'lightgray':'#ff6666')}">
+          <a href="#">{{x.integrationresults}}</a></td>
 
       <td ng-class="(x.buildresults=='pass' || x.buildresults=='PASS') ? 'td-pass' : (x.buildresults==null) ? 'td-null' : 'td-fail'"
-            ng-style="{'background-color':((x.buildresults=='pass' || x.buildresults=='PASS')?'#90EE90':(x.buildresults==null)?'lightgray':'#ff6666')}"><a href="#">{{x.buildresults}}</a></td>
+            ng-style="{'background-color':((x.buildresults=='pass' || x.buildresults=='PASS')?'#90EE90':(x.buildresults==null)?'lightgray':'#ff6666')}">
+          <a href="#">{{x.buildresults}}</a></td>
 
       <td ng-class="(x.deployresults=='pass' || x.deployresults=='PASS') ? 'td-pass' : (x.deployresults==null) ? 'td-null' : 'td-fail'"
-               ng-style="{'background-color':(x.deployresults=='pass' || x.deployresults=='PASS'?'#90EE90':(x.deployresults==null)?'lightgray':'#ff6666')}"><a href="#">{{x.deployresults}}</a></td>
+               ng-style="{'background-color':(x.deployresults=='pass' || x.deployresults=='PASS'?'#90EE90':(x.deployresults==null)?'lightgray':'#ff6666')}">
+          <a href="#">{{x.deployresults}}</a></td>
 
       <td ng-class="(x.healthresults=='pass' || x.healthresults=='PASS') ? 'td-pass' : (x.healthresults==null) ? 'td-null' : 'td-fail'"
-              ng-style="{'background-color':((x.healthresults=='pass' || x.healthresults=='PASS')?'#90EE90':(x.healthresults==null)?'lightgray':'#ff6666')}"><a href="#">{{x.healthresults}}</a></td>
+              ng-style="{'background-color':((x.healthresults=='pass' || x.healthresults=='PASS')?'#90EE90':(x.healthresults==null)?'lightgray':'#ff6666')}">
+          <a href="#">{{x.healthresults}}</a></td>
   </tr>
 </table>
 
