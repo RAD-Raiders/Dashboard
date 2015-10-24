@@ -34,26 +34,27 @@
 
       <td ng-class="(x.unitresults=='pass' || x.unitresults=='PASS') ? 'td-pass' : (x.unitresults==null) ? 'td-null' : 'td-fail'"
         ng-style="{'background-color':((x.unitresults=='pass' || x.unitresults=='PASS')?'#90EE90':(x.unitresults==null)?'lightgray':'#ff6666')}">
-        <a href="#">
+        <a href="https://travis-ci.org/RAD-Raiders/CDTEST/builds/" target="_blank">
             {{x.unitresults}}
         </a>
     </td>
 
       <td ng-class="(x.integrationresults=='pass' || x.integrationresults=='PASS') ? 'td-pass' : (x.integrationresults==null) ? 'td-null' : 'td-fail'"
             ng-style="{'background-color':((x.integrationresults=='pass' || x.integrationresults=='PASS')?'#90EE90':(x.integrationresults==null)?'lightgray':'#ff6666')}">
-          <a href="#">{{x.integrationresults}}</a></td>
+          <a href="https://travis-ci.org/RAD-Raiders/CDTEST/builds/" target="_blank">{{x.integrationresults}}</a></td>
 
       <td ng-class="(x.buildresults=='pass' || x.buildresults=='PASS') ? 'td-pass' : (x.buildresults==null) ? 'td-null' : 'td-fail'"
             ng-style="{'background-color':((x.buildresults=='pass' || x.buildresults=='PASS')?'#90EE90':(x.buildresults==null)?'lightgray':'#ff6666')}">
-          <a href="#">{{x.buildresults}}</a></td>
+          <a href="https://travis-ci.org/RAD-Raiders/CDTEST/builds/" target="_blank">{{x.buildresults}}</a></td>
 
       <td ng-class="(x.deployresults=='pass' || x.deployresults=='PASS') ? 'td-pass' : (x.deployresults==null) ? 'td-null' : 'td-fail'"
                ng-style="{'background-color':(x.deployresults=='pass' || x.deployresults=='PASS'?'#90EE90':(x.deployresults==null)?'lightgray':'#ff6666')}">
-          <a href="#">{{x.deployresults}}</a></td>
+          <a href="https://us-west-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/environment/dashboard?applicationName=rubyonrails&environmentId=e-inp3hqmku5" target="_blank">
+              {{x.deployresults}}</a></td>
 
       <td ng-class="(x.healthresults=='pass' || x.healthresults=='PASS') ? 'td-pass' : (x.healthresults==null) ? 'td-null' : 'td-fail'"
               ng-style="{'background-color':((x.healthresults=='pass' || x.healthresults=='PASS')?'#90EE90':(x.healthresults==null)?'lightgray':'#ff6666')}">
-          <a href="#">{{x.healthresults}}</a></td>
+          <a href="http://rails-env-dev-jmzm5tk3fp.elasticbeanstalk.com/" target="_blank">{{x.healthresults}}</a></td>
   </tr>
 </table>
 
