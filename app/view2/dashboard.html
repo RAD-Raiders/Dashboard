@@ -27,7 +27,8 @@
 	<th>Integration Test Result</th>
 	<th>Build Result</th>
 	<th>Deploy Result</th>
-	<th>Overall Health Result</th>
+	<th>Health Results</th>
+    <th>Smoke Test Result</th>
   <tr ng-repeat="x in names.slice().reverse()">
     <td>{{ x.buildid}}</td>
     <td>{{x.created_at}}</td>
@@ -54,7 +55,11 @@
 
       <td ng-class="(x.healthresults=='pass' || x.healthresults=='PASS') ? 'td-pass' : (x.healthresults==null) ? 'td-null' : 'td-fail'"
               ng-style="{'background-color':((x.healthresults=='pass' || x.healthresults=='PASS')?'#90EE90':(x.healthresults==null)?'lightgray':'#ff6666')}">
-          <a href="http://rails-env-dev-jmzm5tk3fp.elasticbeanstalk.com/" target="_blank">{{x.healthresults}}</a></td>
+          <a href="https://us-west-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/environment/dashboard?applicationName=rubyonrails&environmentId=e-inp3hqmku5" target="_blank">{{x.healthresults}}</a></td>
+
+      <td ng-class="(x.smoke=='pass' || x.smoke=='PASS') ? 'td-pass' : (x.smoke==null) ? 'td-null' : 'td-fail'"
+          ng-style="{'background-color':((x.smoke=='pass' || x.smoke=='PASS')?'#90EE90':(x.smoke==null)?'lightgray':'#ff6666')}">
+          <a href="http://rails-env-dev-jmzm5tk3fp.elasticbeanstalk.com/" target="_blank">{{x.smoke}}</a></td>
   </tr>
 </table>
 
