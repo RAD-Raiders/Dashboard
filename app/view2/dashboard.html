@@ -57,9 +57,10 @@
               ng-style="{'background-color':((x.healthresults=='pass' || x.healthresults=='PASS')?'#90EE90':(x.healthresults==null)?'lightgray':'#ff6666')}">
           <a href="https://us-west-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/environment/dashboard?applicationName=rubyonrails&environmentId=e-inp3hqmku5" target="_blank">{{x.healthresults}}</a></td>
 
-      <td ng-class="(x.smoke=='pass' || x.smoke=='PASS') ? 'td-pass' : (x.smoke==null) ? 'td-null' : 'td-fail'"
-          ng-style="{'background-color':((x.smoke=='pass' || x.smoke=='PASS')?'#90EE90':(x.smoke==null)?'lightgray':'#ff6666')}">
-          <a href="http://rails-env-dev-jmzm5tk3fp.elasticbeanstalk.com/" target="_blank">{{x.smoke}}</a></td>
+      <!--ng-class="(x.smoke=='pass' || x.smoke=='PASS') ? 'td-pass' : (x.smoke==null) ? 'td-null' : 'td-fail'"-->
+      <td ng-class="results.pass"
+          ng-style="{'background-color':((x.healthresults=='pass' || x.healthresults=='PASS')?'#90EE90':(x.healthresults==null)?'lightgray':'#ff6666')}">
+          <a href="http://rails-env-dev-jmzm5tk3fp.elasticbeanstalk.com/" target="_blank">{{x.healthresults}}</a></td>
   </tr>
 </table>
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29dbc3b7-e8d6-4274-b838-8bf38c55fb4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.css" afterPath="$PROJECT_DIR$/app/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dashboard-master.iws" afterPath="$PROJECT_DIR$/Dashboard-master.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view2/dashboard.html" afterPath="$PROJECT_DIR$/app/view2/dashboard.html" />
     </list>
     <ignored path="Dashboard-master.iws" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view2/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27083334">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.5833333">
+              <caret line="62" column="109" selection-start-line="62" selection-start-column="109" selection-end-line="62" selection-end-column="109" />
               <folding />
             </state>
           </provider>
@@ -407,12 +407,12 @@
       <created>1445697169570</created>
       <option name="number" value="Default" />
       <updated>1445697169570</updated>
-      <workItem from="1445697172409" duration="19479000" />
+      <workItem from="1445697172409" duration="20668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19479000" />
+    <option name="totallyTimeSpent" value="20668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -509,8 +509,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view2/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27083334">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.5833333">
+          <caret line="62" column="109" selection-start-line="62" selection-start-column="109" selection-end-line="62" selection-end-column="109" />
           <folding />
         </state>
       </provider>
