@@ -1,33 +1,78 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+h1 {
+  text-align: center;
+  text-shadow: 0px 1px 1px #4d4d4d;
 }
 
-.menu:before {
-  content: "[";
+th, td{
+  border: 1px solid grey;
 }
 
-.menu:after {
-  content: "]";
+td{
+  width: 150px;
 }
 
-.menu > li {
-  display: inline;
+table{
+  border-collapse:separate;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+td.td-pass:hover{
+  background-color:#90EE90 !important;
+  color: black !important;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+td.td-null:hover{
+  background-color:lightgray !important;
+  color: black !important;
 }
-.red {
-    color: red; 
+
+td.td-fail:hover{
+  background-color:#ff6666 !important;
+  color: black !important;
 }
+
+tr:hover td{
+  background-color:darkkhaki !important;
+  color: white !important;
+}
+
+td a {
+  display:block;
+  width:100%;
+}
+
+a {
+  color:black;
+  text-decoration:none;
+}
+
+th:first-child {
+  border-radius: 6px 0 0 0;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+th:last-child {
+  border-radius: 0 6px 0 0;
+}
+
+th:only-child{
+  border-radius: 6px 6px 0 0;
+}
+
+table, th , td  {
+  font-size:36;
+  padding: 5px;
+  margin: auto;
+  text-align: center;  
+}
+table tr:nth-child(odd)	{
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
